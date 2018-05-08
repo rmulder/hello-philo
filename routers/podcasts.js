@@ -1,5 +1,5 @@
-var express = require('express');
-var router = new express.Router();
+const express = require('express');
+const router = new express.Router();
 import { fetchFeed } from '../feed-tools';
 const jjUrl = 'http://feeds.feedwrench.com/JavaScriptJabber.rss';
 const lcUrl = 'http://feeds.feedburner.com/SlateLexiconValley';

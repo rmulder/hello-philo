@@ -6,6 +6,7 @@ export const BackIcon = ({ classNames }) => (
     <path d="M2.4,8l5.3,5.3C7.9,13.5,8,13.7,8,14c0,0.6-0.4,1-1,1c-0.3,0-0.5-0.1-0.7-0.3l-6-6C0.1,8.5,0,8.3,0,8c0-0.3,0.1-0.5,0.3-0.7l6-6C6.5,1.1,6.7,1,7,1c0.6,0,1,0.4,1,1c0,0.3-0.1,0.6-0.3,0.8L2.4,8L2.4,8z" />
   </svg>
 );
+
 BackIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -29,6 +30,7 @@ export const BrowseIcon = ({ classNames }) => (
     </g>
   </svg>
 );
+
 BrowseIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -39,6 +41,7 @@ export const CheckIcon = ({ classNames }) => (
     <path d="M15.7,1.3l-1.3-0.9c-0.4-0.2-0.8-0.2-1.1,0.2L6,11.3L2.5,7.7c-0.3-0.3-0.8-0.3-1.1,0L0.2,8.9c-0.3,0.3-0.3,0.8,0,1.1l5.6,5.6c0.3,0.3,0.9,0.3,1.2-0.1l8.9-13.1C16.1,2,16,1.5,15.7,1.3z" />
   </svg>
 );
+
 CheckIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -49,6 +52,7 @@ export const ClearIcon = ({ classNames }) => (
     <path d="M14,11.9L10.1,8L14,4.1c0.4-0.4,0.4-1,0-1.4L13.3,2c-0.4-0.4-1-0.4-1.4,0L8,5.9L4.1,2c-0.4-0.4-1-0.4-1.4,0L2,2.7c-0.4,0.4-0.4,1,0,1.4L5.9,8L2,11.9c-0.4,0.4-0.4,1,0,1.4L2.7,14c0.4,0.4,1,0.4,1.4,0L8,10.1l3.9,3.9c0.4,0.4,1,0.4,1.4,0l0.7-0.7C14.4,12.9,14.4,12.3,14,11.9z" />
   </svg>
 );
+
 ClearIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -64,6 +68,7 @@ export const FacebookIcon = ({ classNames }) => (
     <path d="M8.3,10.6h3.3V9.1V7.6V7.4c0-1.4,0-3.6,1.1-5C13.7,1,15.2,0,17.8,0c4.2,0,5.9,0.6,5.9,0.6l-0.8,4.9c0,0-1.4-0.4-2.7-0.4s-2.4,0.5-2.4,1.7v0.5v1.7v1.5h5.3l-0.4,4.8h-4.9V32h-6.2V15.4H8.3V10.6" />
   </svg>
 );
+
 FacebookIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -81,6 +86,7 @@ export const InfoIcon = ({ classNames }) => (
     </g>
   </svg>
 );
+
 InfoIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -91,6 +97,7 @@ export const LiveIcon = ({ classNames }) => (
     <path d="M10,13l2.4-11.4c0.3-1.4-1.6-2.2-2.4-0.9L0.2,17c-0.5,0.9,0.1,2,1.1,2H6L3.6,30.4c-0.3,1.4,1.6,2.2,2.4,0.9L15.8,15c0.5-0.9-0.1-2-1.1-2H10z" />
   </svg>
 );
+
 LiveIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -101,6 +108,7 @@ export const LogoIcon = ({ classNames }) => (
     <path id="svg-logo" d="M52.5,6.8c-4.2,0-7.5,3.4-7.5,7.5s3.4,7.5,7.5,7.5s7.5-3.4,7.5-7.5S56.6,6.8,52.5,6.8z M52.5,19.8c-3,0-5.5-2.4-5.5-5.5s2.4-5.5,5.5-5.5s5.5,2.4,5.5,5.5S55.5,19.8,52.5,19.8z M40,0.7c1.1,0,2.1,1,2.1,2.1v18.3c0,0.4-0.4,0.8-0.9,0.8h-0.5c-0.4,0-0.7-0.3-0.7-0.8V0.7z M34.5,6.7c1.2,0,2.1,1,2.1,2.1v12.2c0,0.4-0.4,0.8-0.8,0.8h-0.5c-0.4,0-0.8-0.3-0.8-0.8V6.7z M36.9,2.1c0,0.8-0.6,1.4-1.4,1.4s-1.4-0.6-1.4-1.4s0.6-1.4,1.4-1.4S36.9,1.3,36.9,2.1z M19.8,21.1c0,0.4-0.4,0.8-0.8,0.8h-0.5c-0.4,0-0.7-0.3-0.7-0.8V0.7c1.1,0,2.1,1,2.1,2.1l0,6.6c1-1.7,3.2-2.6,5.1-2.6c2.6,0,4.9,1.3,5.7,3.9c0.3,0.8,0.4,1.7,0.4,2.8v7.7c0,0.4-0.4,0.8-0.8,0.8h-0.5c-0.4,0-0.8-0.3-0.8-0.8c0,0,0-7.5,0-7.5c0-2.5-1.2-4.8-4.1-4.8c-2.9,0-4.8,1.9-5,4.6V21.1z M2.1,27.2c0,1.2-0.9,2.1-2.1,2.1v-4.2c0,0,0-10.9,0-10.9c0-4,3.5-7.4,7.5-7.4c4.5,0,7.5,3.4,7.5,7.6c0,3.4-2.3,6.4-5.6,7.2c-1.5,0.4-3.9,0.5-4.9-0.8c-0.4-0.5-0.5-1.4-0.1-2c0.9,0.6,2,1,3.2,1c3,0,5.5-2.5,5.5-5.4c0-3-2.5-5.5-5.5-5.5c-3,0-5.5,2.4-5.5,5.5L2.1,27.2z" />
   </svg>
 );
+
 LogoIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -112,6 +120,7 @@ export const MaximizeIcon = ({ classNames }) => (
     <path d="M12.4,8.9c-0.1-0.2-0.3-0.2-0.4-0.1l-0.9,0.9L9.3,8l1.8-1.8L12,7.2c0.1,0.1,0.4,0.1,0.4-0.1L14,2.3C14,2.1,13.9,2,13.7,2L8.9,3.6C8.8,3.7,8.7,3.9,8.8,4l0.9,0.9L8,6.7L6.2,4.9L7.2,4c0.1-0.1,0.1-0.4-0.1-0.4L2.3,2C2.1,2,2,2.1,2,2.3l1.6,4.7C3.7,7.2,3.9,7.3,4,7.2l0.9-0.9L6.7,8L4.9,9.8L4,8.8C3.9,8.7,3.7,8.8,3.6,8.9L2,13.7C2,13.9,2.1,14,2.3,14l4.7-1.6c0.2-0.1,0.2-0.3,0.1-0.4l-0.9-0.9L8,9.3l1.8,1.8L8.8,12c-0.1,0.1-0.1,0.4,0.1,0.4l4.7,1.6c0.2,0.1,0.4-0.1,0.3-0.3L12.4,8.9z" />
   </svg>
 );
+
 MaximizeIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -122,6 +131,7 @@ export const MinimizeIcon = ({ classNames }) => (
     <path d="M14.4,0H1.6C0.7,0,0,0.7,0,1.6v12.8C0,15.3,0.7,16,1.6,16h12.8c0.9,0,1.6-0.7,1.6-1.6V1.6C16,0.7,15.3,0,14.4,0z M13.1,11.8l0.9-0.9c0.1-0.1,0.1-0.4-0.1-0.4L9.2,8.9C9,8.9,8.9,9,8.9,9.2l1.6,4.7c0.1,0.2,0.3,0.2,0.4,0.1l0.9-0.9l1.9,1.9H2.3l1.9-1.9l0.9,0.9c0.1,0.1,0.4,0.1,0.4-0.1l1.6-4.7C7.1,9,7,8.9,6.8,8.9L2,10.5c-0.2,0.1-0.2,0.3-0.1,0.4l0.9,0.9L1,13.7V2.3l1.9,1.9L1.9,5.1C1.8,5.2,1.9,5.4,2,5.5l4.7,1.6C7,7.1,7.1,7,7.1,6.8L5.5,2C5.4,1.9,5.2,1.8,5.1,1.9L4.2,2.9L2.3,1h11.4l-1.9,1.9l-0.9-0.9c-0.1-0.1-0.4-0.1-0.4,0.1L8.9,6.8C8.9,7,9,7.1,9.2,7.1L14,5.5c0.2-0.1,0.2-0.3,0.1-0.4l-0.9-0.9L15,2.3v11.4L13.1,11.8z" />
   </svg>
 );
+
 MinimizeIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -144,6 +154,7 @@ export const PlayPauseLargeIcon = ({ classNames }) => (
     </g>
   </svg>
 );
+
 PlayPauseLargeIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -166,6 +177,7 @@ export const PlayPauseSmallIcon = ({ classNames }) => (
     </g>
   </svg>
 );
+
 PlayPauseSmallIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -176,6 +188,7 @@ export const PlayIcon = ({ classNames }) => (
     <path id="svg-play-small_1_" d="M1.5,2v12c0,1.6,1.8,2.6,3.1,1.7l9-6c1.2-0.8,1.2-2.5,0-3.3l-9-6C3.3-0.5,1.5,0.4,1.5,2z" />
   </svg>
 );
+
 PlayIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -186,6 +199,7 @@ export const SaveIcon = ({ classNames }) => (
     <path d="M15,6.5H9.5V1c0-0.6-0.4-1-1-1h-1c-0.6,0-1,0.4-1,1v5.5H1c-0.6,0-1,0.4-1,1v1c0,0.6,0.4,1,1,1h5.5V15c0,0.6,0.4,1,1,1h1c0.6,0,1-0.4,1-1V9.5H15c0.6,0,1-0.4,1-1v-1C16,6.9,15.6,6.5,15,6.5z" />
   </svg>
 );
+
 SaveIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -196,6 +210,7 @@ export const SearchIcon = ({ classNames }) => (
     <path d="M31.3,27.7l-7.5-7.5c1.4-2.1,2.2-4.6,2.2-7.3c0-7.2-5.8-13-13-13S0,5.8,0,13s5.8,13,13,13c2.7,0,5.2-0.8,7.3-2.2l7.5,7.5c1,1,2.5,1,3.5,0l0,0C32.2,30.3,32.2,28.7,31.3,27.7z M2.5,13C2.5,7.2,7.2,2.5,13,2.5S23.5,7.2,23.5,13S18.8,23.5,13,23.5S2.5,18.8,2.5,13z" />
   </svg>
 );
+
 SearchIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -207,6 +222,7 @@ export const SendIcon = ({ classNames }) => (
     <path d="M16,5l-5-4v2c-0.9,0-6,1-7,8c2.4-3.5,6-4,7-4v2L16,5z" />
   </svg>
 );
+
 SendIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -218,6 +234,7 @@ export const ShowsIcon = ({ classNames }) => (
     <path d="M24,20.8L24,20.8c0-0.7-0.6-1.3-1.3-1.3H9.3c-0.7,0-1.3,0.6-1.3,1.2v0C8,21.5,8.6,22,9.3,22h13.5C23.4,22,24,21.5,24,20.8z" />
   </svg>
 );
+
 ShowsIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -230,6 +247,7 @@ export const SortIcon = ({ classNames }) => (
     </g>
   </svg>
 );
+
 SortIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -240,6 +258,7 @@ export const TwitterIcon = ({ classNames }) => (
     <path d="M32,6.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.7,3.8,24,3,22.1,3c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5C10.3,10.8,5.4,8.2,2.2,4.2c-0.6,1-0.9,2.1-0.9,3.3c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1C2.9,27.9,6.3,29,10,29c12.1,0,18.7-10,18.7-18.7c0-0.3,0-0.6,0-0.8C30,8.6,31.1,7.4,32,6.1z" />
   </svg>
 );
+
 TwitterIcon.propTypes = {
   classNames: PropTypes.string,
 };
@@ -272,6 +291,7 @@ export const VolumeIcon = ({ classNames }) => (
     </g>
   </svg>
 );
+
 VolumeIcon.propTypes = {
   classNames: PropTypes.string,
 };

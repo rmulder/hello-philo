@@ -1,10 +1,10 @@
-import {parseString} from 'xml2js';
+import { parseString } from 'xml2js';
 import fetch from 'isomorphic-fetch';
 import slug from 'slug';
 
 function destructureFeed(feed) {
-  const {rss: {channel: [data]}} = feed;
-  const feedInfo = {...data, slug: slug(data.title)};
+  const { rss: { channel: [data] } } = feed;
+  const feedInfo = { ...data, slug: slug(data.title) };
   return Promise.resolve(feedInfo);
 }
 
@@ -27,5 +27,3 @@ export function fetchFeed(feed) {
     .then(destructureFeed)
     .catch(e => console.log(e));
 }
-
-

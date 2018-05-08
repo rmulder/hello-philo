@@ -6,7 +6,6 @@ import styles from '../styles/podcast-episode-list';
 
 function PodcastEpisodeList(props) {
   const { title: [podcastTitle = ''] = [], item: episodes = [], routeParams } = props;
-
   const formattedEps = episodes.map(({ enclosure, title: [title] }) => ({
     podcastTitle,
     title,
@@ -34,6 +33,7 @@ function PodcastEpisodeList(props) {
     </div>
   );
 }
+
 PodcastEpisodeList.propTypes = {
   loadPodcastEpisode: PropTypes.func.isRequired,
 };

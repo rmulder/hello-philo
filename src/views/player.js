@@ -18,6 +18,7 @@ function Player(props) {
     </div>
   );
 }
+
 Player.propTypes = {
   title: PropTypes.string,
   podcastTitle: PropTypes.string,

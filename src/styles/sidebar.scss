@@ -14,9 +14,7 @@
     padding: 0;
     border-right: 1px solid $menu-border;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.75);
-
     transition: width 0.3s linear, padding 0.5s linear;
-
     list-style: none;
 
     li.sidebarNavItem {
@@ -39,7 +37,9 @@
       }
 
       &.navItemHome {
-        a { padding: 0.625em 0; }
+        a {
+          padding: 0.625em 0;
+        }
 
         .icon {
           width: 3.75em;

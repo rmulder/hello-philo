@@ -4,6 +4,7 @@ export function createReducer(initialState, handlers) {
     if ({}.hasOwnProperty.call(handlers, action.type)) {
       return handlers[action.type](state, action);
     }
+
     return state;
   };
 }

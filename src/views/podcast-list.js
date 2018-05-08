@@ -16,6 +16,7 @@ function PodcastList(props) {
     </ul>
   );
 }
+
 PodcastList.propTypes = {
   podcasts: PropTypes.object,
 };
