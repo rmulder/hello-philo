@@ -1,13 +1,13 @@
-var path = require('path');
-var express = require('express');
-var bodyParser = require('body-parser');
-var webpack = require('webpack');
-var config = require('./webpack.config.dev');
-var url = require('url');
-var createPodcastAPIRouter = require('./routers/podcasts');
+const path = require('path');
+const express = require('express');
+const bodyParser = require('body-parser');
+const webpack = require('webpack');
+const config = require('./webpack.config.dev');
+// const url = require('url');
+const createPodcastAPIRouter = require('./routers/podcasts');
 
-var app = express();
-var compiler = webpack(config);
+const app = express();
+const compiler = webpack(config);
 
 app.use(require('webpack-dev-middleware')(compiler, {
   noInfo: true,
@@ -24,7 +24,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(8000, 'localhost', function(err) {
+app.listen(8000, 'localhost', (err) => {
   if (err) {
     console.log(err);
     return;
