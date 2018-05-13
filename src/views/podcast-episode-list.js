@@ -4,8 +4,23 @@ import { bindActionCreators } from 'redux';
 import * as podcastActions from '../action-creators/podcasts';
 import styles from '../styles/podcast-episode-list';
 
+function togglePlaylistAction(ep, playlist, props) {
+  if (Object.keys(playlist).includes(ep.title)) {
+    props.deletePlaylistEpisode(ep);
+  } else {
+    props.addPlaylistEpisode(ep);
+  }
+}
+
+function toggleActionIcon(ep, playlist) {
+  const episodes = Object.keys(playlist);
+  return episodes.includes(ep.title) ? '-' : '+';
+}
+
 function PodcastEpisodeList(props) {
-  const { title: [podcastTitle = ''] = [], item: episodes = [], routeParams } = props;
+  const { title: [podcastTitle = ''] = [], item: episodes = [], routeParams, 
+      loadPodcastEpisode, playlist, player } = props;
+
   const formattedEps = episodes.map(({ enclosure, title: [title] }) => ({
     podcastTitle,
     title,
@@ -18,13 +33,18 @@ function PodcastEpisodeList(props) {
       <h1>{podcastTitle}</h1>
       <ul className={styles.episodeList}>
         {
-          formattedEps.map((ep) => (
-            <li
-              key={ep.title} className={styles.episodeListItem} alt={ep.title}
-              onClick={() => props.loadPodcastEpisode(ep)}
-            >
-              <div>
-                {ep.title}
+          formattedEps.map((ep, i) => (
+            <li key={`${i}-${ep.title}`} className={styles.episodeListItem} alt={ep.title}>
+              <div className={styles.episodeLink}>
+                <div
+                  className={styles.iconContainer}
+                  onClick={() => togglePlaylistAction(ep, playlist, props)}
+                >
+                  {toggleActionIcon(ep, playlist)}
+                </div>
+                <div onClick={() => loadPodcastEpisode(ep)}>
+                  {ep.title}
+                </div>
               </div>
             </li>
           ))
@@ -35,10 +55,18 @@ function PodcastEpisodeList(props) {
 }
 
 PodcastEpisodeList.propTypes = {
+  title: PropTypes.array,
+  item: PropTypes.array,
+  routeParams: PropTypes.object,
+  playlist: PropTypes.object,
+  player: PropTypes.object,
   loadPodcastEpisode: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = (state, { routeParams }) => state.podcasts[routeParams.podcastId] || {};
+const mapStateToProps = (state, { routeParams }) => ({
+  ...state, ...state.podcasts[routeParams.podcastId] || {},
+});
+
 const mapDispatchToProps = (dispatch) => bindActionCreators(podcastActions, dispatch);
 
 export default connect(

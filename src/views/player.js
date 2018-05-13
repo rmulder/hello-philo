@@ -7,12 +7,13 @@ import styles from '../styles/player';
 function Player(props) {
   const { title, podcastTitle, src } = props;
 
+  const playerEl = podcastTitle ? { podcastTitle } - { title } : null;
   const audioEl = src ? <audio src={src} controls autoPlay /> : null;
 
   return (
     <div className={styles.playerContainer}>
       <div className={styles.player}>
-        {podcastTitle} - {title}
+        {playerEl}
         {audioEl}
       </div>
     </div>
