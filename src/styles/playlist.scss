@@ -1,0 +1,24 @@
+@import 'variables';
+
+.episodeListContainer {
+  text-align: center;
+}
+
+.episodeList {
+  width: 100%;
+  height: 100%;
+  color: white;
+  margin: 0;
+  text-align: left;
+}
+
+.episodeListItem {
+  padding: 1em;
+  color: white;
+  position: relative;
+  padding: 0.5em 1.5em 1em 0;
+}
+
+.episodePlaylistTitle {
+  margin: 0 0 1em;
+}

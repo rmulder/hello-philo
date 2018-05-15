@@ -1,11 +1,12 @@
 @import 'variables';
-
 :global {
   body {
     margin: 0;
     padding: 0;
-    background: black;
-
+    background: linear-gradient(to bottom, $philo-darkest-gray, $philo-dark-blue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
     a {
       text-decoration: none;
     }

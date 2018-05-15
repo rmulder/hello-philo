@@ -7,8 +7,8 @@ import styles from '../styles/player';
 function Player(props) {
   const { title, podcastTitle, src } = props;
 
-  const playerEl = podcastTitle ? { podcastTitle } - { title } : null;
-  const audioEl = src ? <audio src={src} controls autoPlay /> : null;
+  const playerEl = podcastTitle ? <span>{ title }</span> : '';
+  const audioEl = src ? <audio src={src} controls autoPlay /> : '';
 
   return (
     <div className={styles.playerContainer}>
