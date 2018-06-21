@@ -1,12 +1,19 @@
 @import 'variables';
+
 :global {
+  html {
+    height: 100%;
+  }
+
   body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, $philo-darkest-gray, $philo-dark-blue);
+    /*font-family: $philo-font;*/
+    height: 100%;
+    background: linear-gradient(to bottom, $header-background, $philo-navy-blue);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100%;
+
     a {
       text-decoration: none;
     }
@@ -16,6 +23,7 @@
       color: white;
     }
   }
+
 }
 
 .layout {
@@ -33,9 +41,25 @@
 
 .main {
   height: 100%;
-  width: calc(100% - 5em);
+  width: 100%;
   margin: 0;
   padding: 0;
   display: inline-block;
   overflow: scroll;
+
+  a.logo {
+    display: block;
+    width: 5em;
+    padding: 0.875em 0;
+    color: $philo-blue;
+    cursor: pointer;
+    margin: 0 auto;
+
+    .icon {
+      display: inline-block;
+      width: 5em;
+      height: 1.5em;
+      fill: $philo-blue;
+    }
+  }
 }

@@ -19,6 +19,40 @@
   padding: 0.5em 1.5em 1em 0;
 }
 
+.episodeListItemEmpty {
+  padding: 1em;
+  color: white;
+  position: relative;
+  padding: 0.5em 1.5em 1em 0;
+  list-style: none;
+  text-align: center;
+}
+
+.episodePodcast {
+  padding-left: 1.5em;
+  padding-top: 1em;
+  font-style: italic;
+  color: white;
+}
+
+.episodeLink {
+  cursor: pointer;
+}
+
 .episodePlaylistTitle {
   margin: 0 0 1em;
+}
+
+.iconContainer {
+  float: left;
+  cursor: pointer;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: $philo-blue;
+  margin-right: 0.5em;
+  position: relative;
+  top: 2px;
 }
